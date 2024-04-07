@@ -1,7 +1,9 @@
 <template>
-	<!-- 嵌套路由
-	   children子路由	
-	-->
+	<!-- 动态路由
+		一个“路径参数”使用冒号 : 标记。
+		当匹配到一个路由时，
+		参数值会被设置到 this.$route.params，
+		可以在每个组件内使用 -->
 	<div>
 		<!-- 路由跳转 -->
 		<button @click="handlerCount">跳转到求和页面</button>
@@ -17,19 +19,12 @@
 		methods: {
 			handlerCount() {
 				this.$router.push({
-					name: 'count',
-					params: {
-						userId: 1234
-					}
+					path: '/count/3'
 				})
 			},
 			handlerWord() {
-				// 替换当前路径
 				this.$router.push({
-					path: '/word',
-					query: {
-						name: '小李飞刀'
-					}
+					path: '/word/徐良/postId/32'
 				})
 			}
 		},

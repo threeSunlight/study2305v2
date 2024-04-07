@@ -65,10 +65,6 @@ const routes = [
 // 3. 创建 router 实例，然后传 `routes` 配置
 // 你还可以传别的配置参数, 不过先这么简单着吧。
 const router = new VueRouter({
-  // 指定路由模式,是hash还是history
-  mode:"history",
-  // 访问路由的根目录
-  base: process.env.BASE_URL,
   routes // (缩写) 相当于 routes: routes
 })
 

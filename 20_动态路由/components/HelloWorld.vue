@@ -1,10 +1,6 @@
 <template>
     <div>
         你好呀
-        <button @click="$router.push({
-            path: '/word/news'
-        })">跳转到新闻页面</button>
-        <router-view></router-view>
     </div>
 </template>
 <script>

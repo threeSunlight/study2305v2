@@ -2,7 +2,7 @@
     <div>
         你好呀
         <button @click="$router.push({
-            path: '/word/news'
+            path: '/word/postId/news'
         })">跳转到新闻页面</button>
         <router-view></router-view>
     </div>

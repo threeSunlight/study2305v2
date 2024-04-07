@@ -24,7 +24,7 @@ export default {
     },
     created() {
         console.log('--------created--------');
-        console.log(this.$route.params);
+        console.log(this.$route);
         console.log('--------created--------');
     },
  

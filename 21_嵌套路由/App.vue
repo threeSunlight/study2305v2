@@ -17,19 +17,12 @@
 		methods: {
 			handlerCount() {
 				this.$router.push({
-					name: 'count',
-					params: {
-						userId: 1234
-					}
+					path: '/count/3'
 				})
 			},
 			handlerWord() {
-				// 替换当前路径
 				this.$router.push({
-					path: '/word',
-					query: {
-						name: '小李飞刀'
-					}
+					path: '/word/徐良/postId/32'
 				})
 			}
 		},
