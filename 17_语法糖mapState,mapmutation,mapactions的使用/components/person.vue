@@ -30,6 +30,7 @@ import { mapState, mapActions,mapMutations, mapGetters } from 'vuex';
     },  
     methods: {
       ...mapActions('person', ['updateAges']),
+    
       ...mapMutations('person', ['UPDATE_HABBY']),
       updateAge() {
         // 点击年龄传递参数,进行修改
